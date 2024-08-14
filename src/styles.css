@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    background-color: #f3f4f6;
+    color: #333;    
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    text-align:center;
+}
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 2px;
+    background-color: #e6e8eb;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7fa;
+    border-radius: 4px;
+}
+
+.robot {
+    font-size: 28px;
+    color: #C55724; /* Bellroy-inspired accent color */
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Bellroy-inspired accent color */
+button.control-button {
+    margin: 8px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #E15A1A;
+    color: #fff;
+    text-transform: uppercase;    
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    font-family: GTUltra, Lato, sans-serif;/* I don't have GTUltra font, so it will fall back to sans-serif */
+    -webkit-font-smoothing: antialiased;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 27px 15px -17px rgba(0, 0, 0, .3), 0 2px 4px rgba(0, 0, 0, .3);
+    transition: background-color .2s ease, box-shadow .2s ease;
+}
+
+button.control-button:hover {
+   background-color: #c75724;
+    box-shadow: 0 20px 15px -17px rgba(0, 0, 0, .3), 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+bubutton.control-buttontton:active {
+    background-color: #C55724;
+}
+
+button.control-button:disabled {
+    background-color: #d1d5db;
+    cursor: not-allowed;
+}
+.current-position {
+    background-color:#96b2b6; 
+    border-color: #000;
+}
